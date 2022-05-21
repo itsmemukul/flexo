@@ -1,84 +1,207 @@
-    
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <script src="https://kit.fontawesome.com/0c608b8557.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="mystyle.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/0c608b8557.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="mystyle.css">
+  <link rel="stylesheet" href="flexostore.css">
 </head>
+
 <body>
-    
-    <nav>
-        <div class="logo">Flexo.</div>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <ul>
-          <li><a href="index.html"> <i class="fa-solid fa-house"></i> Home</a></li>
-          <li><a class="active" href="flexostore.html"> <i class="fa-solid fa-store"></i> Store</a></li>
-          <li><a href="popular.html"> <i class="fa-solid fa-fire"></i> Popular</a></li>
-          <li><a href="about.html"> <i class="fa-solid fa-circle-info"></i> About</a></li>
-        </ul>
-      </nav>
 
+  <nav>
+    <div class="logo">Flexo.</div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a href="index.html"> <i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a class="active" href="flexostore.html"> <i class="fa-solid fa-store"></i> Store</a></li>
+      <li><a href="popular.html"> <i class="fa-solid fa-fire"></i> Popular</a></li>
+      <li><a href="about.html"> <i class="fa-solid fa-circle-info"></i> About</a></li>
+    </ul>
+  </nav>
+  <br>
 
-<!--FOOTER-->
+  <!--Categories-->
 
-<footer>
-  <div class="content">
-    <div class="left box">
-      <div class="upper">
-        <div class="topic">About us</div>
-        <p>Flexo is a Platform which provide you free access to various Icons library, fonts , UI/UX Design
-          elements and much more. 
-          Stay Tuned!</p>
+  <div>
+    <h4 class="Categories">&nbsp;&nbsp;&nbsp;&nbsp;Categories&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+  </div>
+  <br>
+  <div class="buttons">
+    <a class="button" href="#"> <i class="fa-solid fa-icons"></i> Icons</a>
+    <a class="button" href="#"> <i class="fa-solid fa-image"></i> Wallpaper</a>
+    <a class="button" href="#"> <i class="fa-solid fa-code"></i> HTML + CSS Codes</a>
+    <a class="button" href="#"> <i class="fa-solid fa-user-astronaut"></i> illustration</a>
+    <a class="button" href="#"> <i class="fa-solid fa-cube"></i> 3D Icons</a>
+    <a class="button" href="#"> <i class="fa-brands fa-figma"></i> Figma Designs</a>
+  </div>
+  <br>
+  <script>
+
+    let buttons = document.querySelectorAll(".button");
+
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", (e) => {
+        e.preventDefault(); 
+
+        let overlay = document.createElement('span');
+        overlay.classList.add("overlay"); 
+        e.target.appendChild(overlay); 
+
+        let xValue = e.clientX - e.target.offsetLeft; 
+        let yValue = e.clientY - e.target.offsetTop; 
+
+        overlay.style.left = xValue + "px"; 
+        overlay.style.top = yValue + "px"; 
+      });
+    }
+  </script>
+
+  <!--Recently Added-->
+
+  <div>
+    <h4 class="Categories">&nbsp;&nbsp;&nbsp;&nbsp;Recently Added&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+  </div>
+  <br>
+
+  <div class="wrap">
+
+    <div class="box">
+      <div class="boxInner">
+       <img src="Images/Icons-3.png"/>
+        <div class="titleBox">
+          The garden blueprint
+        </div>
       </div>
-      <div class="lower">
-        <div class="topic">Contact us</div>
+     </div>
+
+    <div class="box">
+      <div class="boxInner">
+       <img src="Images/Icons-3.png"/>
+        <div class="titleBox">
+          The garden blueprint
+        </div>
+      </div>
+     </div>
+ 
+    <div class="box">
+     <div class="boxInner">
+       <img src="Images/Icons-1.png"/>
+        <div class="titleBox">
+       Spring daffodils
+        </div>
+      </div>
+    </div>
+   
+    <div class="box">
+     <div class="boxInner">
+       <img src="Images/Icons-2.png"/>
+        <div class="titleBox">
+     Iris along the path
+        </div>
+     </div>
+    </div>
+   
+    <div class="box">
+     <div class="boxInner">
+      <img src="Images/Icons-3.png"/>
+       <div class="titleBox">
+         The garden blueprint
+       </div>
+     </div>
+    </div>
+   
+    <div class="box">
+     <div class="boxInner">
+      <img src="Images/Icons-1.png"/>
+       <div class="titleBox">
+         The garden blueprint
+       </div>
+     </div>
+    </div>
+   
+    <div class="box">
+     <div class="boxInner">
+      <img src="Images/Icons-3.png"/>
+       <div class="titleBox">
+         The garden blueprint
+       </div>
+     </div>
+    </div>
+   
+    <div class="box">
+     <div class="boxInner">
+      <img src="Images/Icons-2.png"/>
+       <div class="titleBox">
+         The garden blueprint
+       </div>
+     </div>
+    </div>
+   
+   </div>
 
 
-        <!--<div class="phone">
+  <!--FOOTER-->
+
+  <footer>
+    <div class="content">
+      <div class="left box">
+        <div class="upper">
+          <div class="topic">About us</div>
+          <p>Flexo is a Platform which provide you free access to various Icons library, fonts , UI/UX Design
+            elements and much more.
+            Stay Tuned!</p>
+        </div>
+        <div class="lower">
+          <div class="topic">Contact us</div>
+
+
+          <!--<div class="phone">
           <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
         </div>-->
 
-        
-        <div class="email">
-          <a href="#"><i class="fas fa-envelope"></i>raimukul27@gmail.com</a>
+
+          <div class="email">
+            <a href="#"><i class="fas fa-envelope"></i>raimukul27@gmail.com</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="middle box">
-      <div class="topic">Our Services</div>
-      <div><a href="#">Free Icons Library</a></div>
-      <div><a href="#">Free illustration</a></div>
-      <div><a href="#">Frontend Templates</a></div>
-      <div><a href="#">Wallpapers</a></div>
+      <div class="middle box">
+        <div class="topic">Our Services</div>
+        <div><a href="#">Free Icons Library</a></div>
+        <div><a href="#">Free illustration</a></div>
+        <div><a href="#">Frontend Templates</a></div>
+        <div><a href="#">Wallpapers</a></div>
 
+      </div>
+      <div class="right box">
+        <div class="topic">Subscribe us</div>
+        <form action="#">
+          <input type="text" placeholder="Enter email address">
+          <input type="submit" name="" value="Send">
+          <div class="media-icons">
+            <a href="#"><i id="facebook" class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="right box">
-      <div class="topic">Subscribe us</div>
-      <form action="#">
-        <input type="text" placeholder="Enter email address">
-        <input type="submit" name="" value="Send">
-        <div class="media-icons">
-          <a href="#"><i id="facebook" class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </form>
+    <div class="bottom">
+      <p>Copyright © 2020 <a href="#">Flexo.</a> All rights reserved</p>
     </div>
-  </div>
-  <div class="bottom">
-    <p>Copyright © 2020 <a href="#">Flexo.</a> All rights reserved</p>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
