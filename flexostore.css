@@ -83,7 +83,7 @@ h4:after {
   margin-left: auto;
   margin-right: auto;
 }
-.box  {
+.imgbox  {
     float: left;
     position: relative;
     width: 20%;
@@ -103,14 +103,14 @@ h4:after {
 
 @media only screen and (max-width:480px) { 
     /* Smartphone view: 1 tile */
-    .box {
+    .imgbox {
         width: 50%;
         padding-bottom: 50%;
     }
 }
 @media only screen and (max-width:650px) and (min-width:481px) { 
     /* Tablet view: 2 tiles */
-    .box {
+    .imgbox {
         width: 50%;
         padding-bottom: 50%;
     }
@@ -118,7 +118,7 @@ h4:after {
 
 @media only screen and (max-width:1290px) and (min-width:1051px) { 
     /* Medium desktop: 4 tiles */
-    .box {
+    .imgbox {
         width: 25%;
         padding-bottom: 25%;
     }
